@@ -1,0 +1,18 @@
+# gnatsd.conf
+
+cluster {
+	port: 4248
+	tls {
+		# Route cert #
+		# ca_file: "/etc/gnatsd/ssl/ca.crt"
+		# key_file:  "/etc/gnatsd/ssl/routes.key"
+		# cert_file:   "/etc/gnatsd/ssl/routes.crt"
+	}
+	routes = [
+		# routes #
+		# nats-route://somewhere...
+	]
+}
+
+port: 4222
+http_port: 8222
